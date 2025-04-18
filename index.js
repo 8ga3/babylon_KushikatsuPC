@@ -17,7 +17,7 @@ const createScene = async () => {
         mesh.material.pointSize = 1.5;
         // 向きと位置を修正
         const center = BABYLON.Mesh.Center(result.meshes);
-        mesh.rotateAround(center, new BABYLON.Vector3(1, 0, 0), -Math.PI / 2);
+        mesh.rotateAround(center, new BABYLON.Vector3(1, 0, 0), Math.PI / 2);
         mesh.position.subtractInPlace(center);
     });
 
